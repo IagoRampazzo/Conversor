@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.estagio.desafiotagview.MainActivity"
+    tools:ignore="MergeRootFrame" >
+	
+    <TextView
+        android:id="@+id/texto_titulo"
+        android:text="@string/activity_conversor_informacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <EditText
+        android:id="@+id/edit_valor_brl"
+        android:hint="@string/activity_conversor_ajuda_real"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texto_titulo"/>
+    
+	<!-- Contem apenas alguns valores de moeda  -->
+    <Spinner 
+        android:id="@+id/spinner_conversao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/array_valores"
+        android:layout_below="@id/edit_valor_brl"/>
+    
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_conversao"
+        android:text="@string/acitivity_conversor_botao"
+        android:onClick="calcular"/>
+    
+    <TextView 
+        android:id="@+id/txt_resposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_calcular"
+        android:text="@string/acitivity_conversor_resposta" />
+    
+</RelativeLayout>

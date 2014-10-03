@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DesafioTagview</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String para a activity de conversão -->
+    <string name="activity_conversor_titulo">Conversor de Moeda</string>
+    <string name="activity_conversor_informacao">Valor de R$</string>
+    <string name="activity_conversor_resposta">Valor : </string>
+    <string name="acitivity_conversor_botao">Calcular</string>
+    <string name="acitivity_conversor_resposta">R$ 00.00</string>
+	
+    <!-- Hints -->
+    <string name="activity_conversor_ajuda_real">Valor(R$)</string>
+    
+    <string-array name="array_valores">
+        <item name="COP">COP-Colombian Peso</item>
+        <item name="FRF">FRF-French Franc</item>
+		<item name="ITL">ITL-Italian Lira</item>
+		<item name="MXN">MXN-Mexican Peso</item>
+		<item name="VEF">VEF-Venezuelan Bolívar</item>
+        <item name="USD">USD-US Dollar</item>
+		<item name="ZAR">ZAR-South African Rand</item>
+    </string-array>
+        <string name="valor_inv_lido">Valor inválido</string>
+
+</resources>
